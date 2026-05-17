@@ -12,10 +12,11 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex flex-col items-center md:items-start leading-none">
-            <span className="text-2xl font-bold text-white uppercase">
-              THIRAN <span className="text-primary">LAUNCHLAB</span>
-            </span>
-            <span className="text-[8px] font-bold tracking-[0.4em] text-white/30 uppercase mt-2">DREAM • BUILD • LAUNCH</span>
+             <img 
+              src="/logo-full.png" 
+              alt="Thiran LaunchLab Logo" 
+              className="h-12 w-auto object-contain" 
+            />
           </div>
           
           <div className="text-white/40 text-[10px] font-bold uppercase tracking-widest">
