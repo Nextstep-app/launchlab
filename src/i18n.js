@@ -46,7 +46,8 @@ const resources = {
         }
       },
       quote: {
-        text: "“Your Vision Deserves More Than Just A Website — We Build Digital Experiences That Help You Grow, Stand Out, and Succeed.”"
+        text: "If you don't build your dream, someone else will hire you to help them build theirs.",
+        author: "Tony Gaskins"
       },
       projects: {
         heading: "Our Projects",
@@ -114,7 +115,8 @@ const resources = {
         }
       },
       quote: {
-        text: "“உங்கள் கனவு ஒரு இணையதளத்தை விட மேலானது — நீங்கள் வளரவும், தனித்து நிற்கவும் உதவும் டிஜிட்டல் அனுபவங்களை நாங்கள் உருவாக்குகிறோம்.”"
+        text: "உங்கள் கனவை நீங்கள் கட்டியெழுப்பவில்லை என்றால், தங்களது கனவை கட்டியெழுப்ப யாராவது ஒருவர் உங்களை வேலைக்கு அமர்த்துவார்கள்.",
+        author: "டோனி காஸ்கின்ஸ்"
       },
       projects: {
         heading: "எங்கள் திட்டங்கள்",
@@ -182,7 +184,8 @@ const resources = {
         }
       },
       quote: {
-        text: "“आपका दृष्टिकोण सिर्फ एक वेबसाइट से कहीं अधिक का हकदार है — हम ऐसे डिजिटल अनुभव बनाते हैं जो आपको बढ़ने और सफल होने में मदद करते हैं।”"
+        text: "यदि आप अपने सपने का निर्माण नहीं करते हैं, तो कोई और आपको उनके सपनों के निर्माण में मदद करने के लिए काम पर रखेगा।",
+        author: "टोनी गास्किन्स"
       },
       projects: {
         heading: "हमारे प्रोजेक्ट्स",
