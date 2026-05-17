@@ -43,22 +43,12 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <a href="#" className="flex items-center gap-4 group">
-          <div className="relative">
-            <div className="absolute -inset-1 bg-primary/40 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <img 
-                src="/logo.png" 
-                alt="Logo" 
-                className="relative h-10 w-10 object-contain drop-shadow-[0_0_8px_rgba(255,0,0,0.6)]" 
-            />
-          </div>
-          
-          <div className="flex flex-col leading-none">
-            <span className="text-xl md:text-2xl font-bold text-white uppercase group-hover:text-primary transition-colors duration-300">
-              THIRAN <span className="text-primary group-hover:text-white transition-colors duration-300">LAUNCHLAB</span>
-            </span>
-            <span className="text-[8px] font-bold tracking-[0.4em] text-white/40 uppercase mt-1">DREAM • BUILD • LAUNCH</span>
-          </div>
+        <a href="#" className="flex items-center group">
+          <img 
+              src="/logo-full.png" 
+              alt="Thiran LaunchLab Logo" 
+              className="h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+          />
         </a>
 
         <button 
