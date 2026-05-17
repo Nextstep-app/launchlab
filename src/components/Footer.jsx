@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PrivacyPolicy from './PrivacyPolicy';
 
 const Footer = () => {
+  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
+
   return (
-    <footer className="bg-black py-12 border-t border-white/5">
+    <>
+      <footer className="bg-black py-12 border-t border-white/5">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex flex-col items-center md:items-start leading-none">
@@ -17,12 +21,14 @@ const Footer = () => {
           </div>
           
           <div className="flex gap-6">
-            <a href="#" className="text-white/40 hover:text-primary transition-colors text-[10px] font-bold uppercase tracking-widest">Privacy Policy</a>
+            <button onClick={() => setIsPrivacyOpen(true)} className="text-white/40 hover:text-primary transition-colors text-[10px] font-bold uppercase tracking-widest text-left">Privacy Policy</button>
             <a href="#" className="text-white/40 hover:text-primary transition-colors text-[10px] font-bold uppercase tracking-widest">Terms of Service</a>
           </div>
         </div>
       </div>
     </footer>
+    <PrivacyPolicy isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} />
+    </>
   );
 };
 
