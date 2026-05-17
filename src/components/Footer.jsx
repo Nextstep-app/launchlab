@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import PrivacyPolicy from './PrivacyPolicy';
+import TermsOfService from './TermsOfService';
 
 const Footer = () => {
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
+  const [isTermsOpen, setIsTermsOpen] = useState(false);
 
   return (
     <>
@@ -22,12 +24,13 @@ const Footer = () => {
           
           <div className="flex gap-6">
             <button onClick={() => setIsPrivacyOpen(true)} className="text-white/40 hover:text-primary transition-colors text-[10px] font-bold uppercase tracking-widest text-left">Privacy Policy</button>
-            <a href="#" className="text-white/40 hover:text-primary transition-colors text-[10px] font-bold uppercase tracking-widest">Terms of Service</a>
+            <button onClick={() => setIsTermsOpen(true)} className="text-white/40 hover:text-primary transition-colors text-[10px] font-bold uppercase tracking-widest text-left">Terms of Service</button>
           </div>
         </div>
       </div>
     </footer>
     <PrivacyPolicy isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} />
+    <TermsOfService isOpen={isTermsOpen} onClose={() => setIsTermsOpen(false)} />
     </>
   );
 };
