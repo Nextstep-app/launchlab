@@ -30,9 +30,12 @@ const Quote = () => {
             <div className="w-16 h-1 bg-primary rounded-full mb-2 mx-auto shadow-[0_0_10px_rgba(255,0,0,0.8)]"></div>
           </motion.div>
 
-          <h2 className="text-3xl md:text-5xl lg:text-6xl leading-tight mb-12">
-            {t('quote.text')}
+          <h2 className="text-2xl md:text-3xl lg:text-4xl leading-relaxed mb-6 font-outfit text-white/90 italic">
+            "{t('quote.text')}"
           </h2>
+          <p className="text-primary font-black tracking-widest text-[10px] md:text-xs uppercase mb-16">
+            — {t('quote.author')}
+          </p>
 
           <motion.div
             initial={{ opacity: 0 }}
