@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { Globe, ChevronDown } from 'lucide-react';
+import { Globe, ChevronDown, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -59,6 +60,13 @@ const Navbar = () => {
             <span className="text-[8px] font-bold tracking-[0.4em] text-white/40 uppercase mt-1">DREAM • BUILD • LAUNCH</span>
           </div>
         </a>
+
+        <button 
+          className="lg:hidden text-white p-2"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
 
         <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
@@ -116,6 +124,55 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="lg:hidden bg-zinc-950 border-b border-white/10 overflow-hidden"
+          >
+            <div className="px-6 py-6 flex flex-col gap-6">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-xs font-black tracking-[0.2em] text-white/70 hover:text-primary transition-colors"
+                >
+                  {link.name}
+                </a>
+              ))}
+              
+              <div className="flex flex-col gap-4 mt-2 pt-6 border-t border-white/10">
+                <span className="text-[10px] uppercase tracking-widest text-white/40 font-bold">Select Language</span>
+                <div className="flex gap-6">
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => { changeLanguage(lang.code); setMobileMenuOpen(false); }}
+                      className={`text-xs font-bold uppercase tracking-wider transition-colors ${
+                        i18n.language.startsWith(lang.code) ? 'text-primary' : 'text-white/70 hover:text-white'
+                      }`}
+                    >
+                      {lang.name}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <a 
+                href="#contact" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="mt-4 w-full text-center py-4 bg-primary text-white text-[10px] font-black rounded-lg hover:bg-primary-hover transition-all shadow-[0_0_20px_rgba(255,0,0,0.3)] uppercase tracking-widest"
+              >
+                {t('nav.launch')}
+              </a>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 };
