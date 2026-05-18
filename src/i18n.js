@@ -26,7 +26,12 @@ const resources = {
         badge: "FROM IDEAS TO DIGITAL SUCCESS",
         heading: "Build Your Digital Presence With Thiran",
         cta_start: "Get Started",
-        cta_services: "Our Services"
+        cta_services: "Our Services",
+        stats: {
+          total: "Total Projects",
+          completed: "Completed",
+          ongoing: "Ongoing"
+        }
       },
       philosophy: {
         heading: "Our Process",
@@ -122,7 +127,12 @@ const resources = {
         badge: "யோசனைகளிலிருந்து டிஜிட்டல் வெற்றி வரை",
         heading: "திறனுடன் உங்கள் டிஜிட்டல் அடையாளத்தை உருவாக்குங்கள்",
         cta_start: "தொடங்குங்கள்",
-        cta_services: "எங்கள் சேவைகள்"
+        cta_services: "எங்கள் சேவைகள்",
+        stats: {
+          total: "மொத்த திட்டங்கள்",
+          completed: "முடிவடைந்தவை",
+          ongoing: "செயலில் உள்ளவை"
+        }
       },
       philosophy: {
         heading: "எங்கள் வழிமுறை",
@@ -218,7 +228,12 @@ const resources = {
         badge: "विचारों से डिजिटल सफलता तक",
         heading: "थिरन के साथ अपनी डिजिटल उपस्थिति बनाएं",
         cta_start: "शुरू करें",
-        cta_services: "हमारी सेवाएं"
+        cta_services: "हमारी सेवाएं",
+        stats: {
+          total: "कुल प्रोजेक्ट्स",
+          completed: "पूरे हुए",
+          ongoing: "चल रहे हैं"
+        }
       },
       philosophy: {
         heading: "हमारी प्रक्रिया",
