@@ -31,7 +31,7 @@ const Hero = () => {
           </motion.div>
 
           <motion.h1 
-            className="text-5xl md:text-8xl font-bold uppercase mb-8 leading-[0.9] text-white"
+            className="text-5xl md:text-8xl font-bold uppercase mb-4 leading-[0.9] text-white"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -39,12 +39,31 @@ const Hero = () => {
             {t('hero.heading').split('With Thiran')[0]} <br />
             <span className="text-primary">With Thiran</span>
           </motion.h1>
+
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex items-center justify-center gap-3 md:gap-6 mb-8 mt-4"
+          >
+            <span className="text-xs md:text-lg font-black tracking-[0.25em] text-white uppercase italic text-glow-red">
+              {t('philosophy.steps.s1_name')}
+            </span>
+            <span className="text-primary text-[8px] md:text-xs animate-pulse select-none">■</span>
+            <span className="text-xs md:text-lg font-black tracking-[0.25em] text-white uppercase italic text-glow-red">
+              {t('philosophy.steps2.s2_name')}
+            </span>
+            <span className="text-primary text-[8px] md:text-xs animate-pulse select-none">■</span>
+            <span className="text-xs md:text-lg font-black tracking-[0.25em] text-white uppercase italic text-glow-red">
+              {t('philosophy.steps3.s3_name')}
+            </span>
+          </motion.div>
           
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
-            className="mt-12 flex flex-col md:flex-row gap-6"
+            transition={{ delay: 0.9 }}
+            className="mt-6 flex flex-col md:flex-row gap-6"
           >
             <a href="#contact" className="btn-primary px-12 py-4">{t('hero.cta_start')}</a>
             <a href="#services" className="btn-outline px-12 py-4">{t('hero.cta_services')}</a>
