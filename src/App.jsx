@@ -8,6 +8,7 @@ import Services from './components/Services';
 import Quote from './components/Quote';
 import Projects from './components/Projects';
 import WhyThiran from './components/WhyThiran';
+import Metrics from './components/Metrics';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -32,6 +33,7 @@ function App() {
             <Philosophy />
             <Services />
             <WhyThiran />
+            <Metrics />
             <Quote />
             <Projects />
             <Contact />
