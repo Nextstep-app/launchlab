@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import IntroScreen from './components/IntroScreen';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Philosophy from './components/Philosophy';
 import Services from './components/Services';
 import Quote from './components/Quote';
 import Projects from './components/Projects';
@@ -28,6 +29,7 @@ function App() {
           >
             <Navbar />
             <Hero />
+            <Philosophy />
             <Services />
             <WhyThiran />
             <Quote />
