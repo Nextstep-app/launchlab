@@ -14,7 +14,12 @@ const resources = {
         launch: "LAUNCH NOW"
       },
       intro: {
-        tagline: "Launching Ideas Into Digital Reality",
+        sequence: {
+          dream: "DREAM",
+          build: "BUILD",
+          launch: "LAUNCH"
+        },
+        tagline: "Dream · Build · Launch",
         button: "Initialize Launch"
       },
       hero: {
@@ -22,6 +27,28 @@ const resources = {
         heading: "Build Your Digital Presence With Thiran",
         cta_start: "Get Started",
         cta_services: "Our Services"
+      },
+      philosophy: {
+        heading: "Our Process",
+        subheading: "A simple, relentless framework for digital transformation. From the initial spark of inspiration to a global, high-performance launch.",
+        steps: {
+          s1_num: "01",
+          s1_name: "Dream",
+          s1_title: "Vision & Strategy",
+          s1_desc: "We capture your vision, outline a precise technical roadmap, and design high-fidelity, cinematic user experiences."
+        },
+        steps2: {
+          s2_num: "02",
+          s2_name: "Build",
+          s2_title: "Engineering & Craftsmanship",
+          s2_desc: "We turn designs into clean, high-performance, and scalable code using modern frontend and backend architectures."
+        },
+        steps3: {
+          s3_num: "03",
+          s3_name: "Launch",
+          s3_title: "Deployment & Scaling",
+          s3_desc: "We deploy your platform globally on ultra-fast networks, optimize for SEO, and set the stage for rapid expansion."
+        }
       },
       services: {
         heading: "Premium Service Packages",
@@ -83,7 +110,12 @@ const resources = {
         launch: "இப்போதே தொடங்கு"
       },
       intro: {
-        tagline: "யோசனைகளை டிஜிட்டல் யதார்த்தமாக மாற்றுதல்",
+        sequence: {
+          dream: "கனவு",
+          build: "உருவாக்கம்",
+          launch: "தொடக்கம்"
+        },
+        tagline: "கனவு · உருவாக்கம் · தொடக்கம்",
         button: "தொடங்கு"
       },
       hero: {
@@ -91,6 +123,28 @@ const resources = {
         heading: "திறனுடன் உங்கள் டிஜிட்டல் அடையாளத்தை உருவாக்குங்கள்",
         cta_start: "தொடங்குங்கள்",
         cta_services: "எங்கள் சேவைகள்"
+      },
+      philosophy: {
+        heading: "எங்கள் வழிமுறை",
+        subheading: "டிஜிட்டல் மாற்றத்திற்கான எளிமையான மற்றும் ஆற்றல்மிக்க கட்டமைப்பு. உங்கள் யோசனையின் ஆரம்பம் முதல் உலகளாவிய வெளியீடு வரை.",
+        steps: {
+          s1_num: "01",
+          s1_name: "கனவு",
+          s1_title: "நோக்கம் & மூலோபாயம்",
+          s1_desc: "உங்கள் யோசனைகளைக் கைப்பற்றி, துல்லியமான தொழில்நுட்ப வழிகாட்டி மற்றும் உயர்தர வடிவமைப்புகளை உருவாக்குகிறோம்."
+        },
+        steps2: {
+          s2_num: "02",
+          s2_name: "உருவாக்கம்",
+          s2_title: "பொறியியல் & வடிவமைப்பு",
+          s2_desc: "நவீன இணைய கட்டமைப்பைப் பயன்படுத்தி உங்கள் வடிவமைப்புகளை சுத்தமான மற்றும் அளவிடக்கூடிய குறியீடாக மாற்றுகிறோம்."
+        },
+        steps3: {
+          s3_num: "03",
+          s3_name: "தொடக்கம்",
+          s3_title: "வெளியீடு & வளர்ச்சி",
+          s3_desc: "உங்கள் தளத்தை அதிவேக நெட்வொர்க்குகளில் உலகளவில் வெளியிட்டு, தேடுபொறி உகப்பாக்கம் (SEO) மற்றும் வளர்ச்சிக்கு வழிவகை செய்கிறோம்."
+        }
       },
       services: {
         heading: "சிறப்பு சேவை தொகுப்புகள்",
@@ -152,7 +206,12 @@ const resources = {
         launch: "अभी शुरू करें"
       },
       intro: {
-        tagline: "विचारों को डिजिटल हकीकत में बदलना",
+        sequence: {
+          dream: "सपना",
+          build: "निर्माण",
+          launch: "शुभारंभ"
+        },
+        tagline: "सपना · निर्माण · शुभारंभ",
         button: "शुरू करें"
       },
       hero: {
@@ -160,6 +219,28 @@ const resources = {
         heading: "थिरन के साथ अपनी डिजिटल उपस्थिति बनाएं",
         cta_start: "शुरू करें",
         cta_services: "हमारी सेवाएं"
+      },
+      philosophy: {
+        heading: "हमारी प्रक्रिया",
+        subheading: "डिजिटल परिवर्तन के लिए एक सरल और सतत ढांचा। प्रेरणा की प्रारंभिक चिंगारी से लेकर वैश्विक, उच्च प्रदर्शन वाले लॉन्च तक।",
+        steps: {
+          s1_num: "01",
+          s1_name: "सपना",
+          s1_title: "दृष्टिकोण और रणनीति",
+          s1_desc: "हम आपके विचारों को समझते हैं, एक सटीक तकनीकी रोडमैप तैयार करते हैं, और उच्च-गुणवत्ता वाले सिनेमाई अनुभव डिजाइन करते हैं."
+        },
+        steps2: {
+          s2_num: "02",
+          s2_name: "निर्माण",
+          s2_title: "इंजीनियरिंग और शिल्प कौशल",
+          s2_desc: "हम आधुनिक विकास ढांचों का उपयोग करके डिजाइनों को स्वच्छ, उच्च-प्रदर्शन और स्केलेबल कोड में परिवर्तित करते हैं."
+        },
+        steps3: {
+          s3_num: "03",
+          s3_name: "शुभारंभ",
+          s3_title: "तैनाती और स्केलिंग",
+          s3_desc: "हम आपके प्लेटफ़ॉर्म को अल्ट्रा-फास्ट नेटवर्क पर वैश्विक स्तर पर तैनात करते हैं, एसईओ को अनुकूलित करते हैं, और विकास की नींव रखते हैं."
+        }
       },
       services: {
         heading: "प्रीमियम सेवा पैकेज",
