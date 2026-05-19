@@ -40,6 +40,13 @@
     @apply px-8 py-3 bg-gradient-to-r from-primary to-secondary text-black font-bold rounded-xl hover:from-primary-hover hover:to-secondary-hover transition-all duration-300 shadow-[0_0_15px_rgba(255,204,0,0.3)] hover:shadow-[0_0_25px_rgba(255,0,0,0.5)] transform hover:-translate-y-1 uppercase tracking-widest text-[10px];
   }
 
+  .btn-primary.launching {
+    transform: scale(0.96) translateY(2px) !important;
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.8) !important;
+    background: #ff0000 !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   .btn-outline {
     @apply px-8 py-3 border border-white/10 bg-white/5 backdrop-blur-md text-white font-semibold rounded-xl hover:border-secondary hover:text-secondary transition-all duration-300 uppercase tracking-widest text-[10px];
   }
@@ -81,6 +88,25 @@
     linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 50px 50px;
+  transition: background-image 0.5s ease-out;
+}
+
+.bg-mesh.launch-active {
+  background-image: 
+    linear-gradient(rgba(255, 0, 0, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.15) 1px, transparent 1px);
+}
+
+@keyframes shake {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(-1.5px, 0.5px); }
+  40% { transform: translate(1.5px, -0.5px); }
+  60% { transform: translate(-0.5px, 1.5px); }
+  80% { transform: translate(0.5px, -1.5px); }
+}
+
+.shake-active {
+  animation: shake 0.15s ease-in-out infinite;
 }
 
 .glow-orb-red {
