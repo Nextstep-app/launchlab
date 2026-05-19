@@ -13,9 +13,9 @@ const Hero = () => {
 
     // Short delay for the button compression and pulse effect before scrolling
     setTimeout(() => {
-      const servicesSection = document.getElementById('services');
-      if (servicesSection) {
-        servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
       // Reset state so the effect can trigger again if needed
       setTimeout(() => setIsLaunching(false), 500); 
@@ -97,7 +97,7 @@ const Hero = () => {
             className="mt-6 flex flex-col md:flex-row gap-6"
           >
             <a 
-              href="#services" 
+              href="#contact" 
               onClick={handleLaunch}
               className={`btn-primary px-12 py-4 relative overflow-hidden ${isLaunching ? 'launching' : ''}`}
             >
