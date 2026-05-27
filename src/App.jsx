@@ -11,7 +11,7 @@ import WhyThiran from './components/WhyThiran';
 import Metrics from './components/Metrics';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
+import FloatingContact from './components/FloatingContact';
 
 function App() {
   const [isStarted, setIsStarted] = useState(false);
@@ -38,7 +38,7 @@ function App() {
             <Projects />
             <Contact />
             <Footer />
-            <WhatsAppButton />
+            <FloatingContact />
           </motion.main>
         )}
       </AnimatePresence>
