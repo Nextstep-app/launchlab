@@ -1,0 +1,51 @@
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import IntroScreen from './components/IntroScreen';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Philosophy from './components/Philosophy';
+import Services from './components/Services';
+import Quote from './components/Quote';
+import Projects from './components/Projects';
+import Testimonials from './components/Testimonials';
+import WhyThiran from './components/WhyThiran';
+import Metrics from './components/Metrics';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import FloatingContact from './components/FloatingContact';
+
+function App() {
+  const [isStarted, setIsStarted] = useState(false);
+
+  return (
+    <div className="relative min-h-screen bg-background overflow-x-hidden">
+      <AnimatePresence mode="wait">
+        {!isStarted ? (
+          <IntroScreen key="intro" onStart={() => setIsStarted(true)} />
+        ) : (
+          <motion.main
+            key="main"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            <Navbar />
+            <Hero />
+            <Philosophy />
+            <Services />
+            <WhyThiran />
+            <Metrics />
+            <Quote />
+            <Projects />
+            <Testimonials />
+            <Contact />
+            <Footer />
+            <FloatingContact />
+          </motion.main>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+export default App;
