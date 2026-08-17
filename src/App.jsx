@@ -7,6 +7,7 @@ import Philosophy from './components/Philosophy';
 import Services from './components/Services';
 import Quote from './components/Quote';
 import Projects from './components/Projects';
+import Testimonials from './components/Testimonials';
 import WhyThiran from './components/WhyThiran';
 import Metrics from './components/Metrics';
 import Contact from './components/Contact';
@@ -36,6 +37,7 @@ function App() {
             <Metrics />
             <Quote />
             <Projects />
+            <Testimonials />
             <Contact />
             <Footer />
             <FloatingContact />
